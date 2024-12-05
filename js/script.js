@@ -13,15 +13,16 @@ function hitungBMI() {
 
     // jika input kosong
     if (inputBeratBadan == '' || inputUsia == '' || inputTinggiBadan == '') {
-        alert('Semua kolom wajib diisi.')
+        alert('Semua kolom wajib diisi.');
     // jika input tidak valid
     } else if (inputBeratBadan<=0 || inputUsia <=0 || inputTinggiBadan <=0) {
         alert('Harap masukkan data yang valid.');
     // jika semua input valid
-    } else
+    } else {
         // rumus hitung BMI
         inputTinggiBadan = inputTinggiBadan / 100
         updateResult(((inputBeratBadan)/(inputTinggiBadan * inputTinggiBadan)).toFixed(1));
+    }
 }
 
 // update semua hasil kalkulasi BMI dan teks deskripsi dibawahnya
