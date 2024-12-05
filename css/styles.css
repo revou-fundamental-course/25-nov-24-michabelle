@@ -1,34 +1,46 @@
 /* Ini File CSS */
 
+/* font yang dipakai di seluruh website */
+html {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* posisi text di tengah seperti judul article */
 .main-header {
     text-align: center;
 }
 
+/* agar posisi dua section di dalam main body bersebelahan secara merata */
 main {
     display: flex;
     justify-content: space-evenly;
 }
 
+/* lebar satu section */
 .main-section {
     width: 40%;
 }
 
+/* posisi footer */
 footer {
     text-align: center;
 }
 
+/* form = bagian yang diberi background berwarna */
 form {
-    background-color: antiquewhite;
+    background-color: powderblue;
     padding: 16px;
     border-radius: 8px;
 }
 
+/* posisi text dan input dalam form */
 .form-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+/* style input type text */
 input[type=number] {
     width: 40%;
     padding: 12px 20px;
@@ -39,24 +51,46 @@ input[type=number] {
     box-sizing: border-box;
   }
 
+/* pemberi jarak antar text/input dengan dua button di bawah form */
 .form-button-container {
     margin-top: 32px;
 }
 
+/* ukuran dan bentuk button */
 button {
     border: 0;
     padding: 8px;
     border-radius: 4px;
 }
 
+/* warna button */
 .bg-cadet-blue {
     background-color: cadetblue;
 }
 
+/* warna button reset */
 .bg-alice-blue {
     background-color: aliceblue;
 }
 
-.color-antique-white {
-    color: antiquewhite;
+/* warna text dalam button */
+.color-white {
+    color: white;
+}
+
+/* agar dua button bersebelahan kanan-kiri dan posisi di tengah form */
+.left-right-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+/* Responsive */
+@media only screen and (max-width: 480px) {
+    main {
+        flex-direction: column;
+    }
+
+    .main-section {
+        width: 100%;
+    }
 }
